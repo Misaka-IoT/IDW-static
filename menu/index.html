@@ -1,0 +1,50 @@
+<!--<img src="https://api.lolicon.app/setu/v2?size=original&size=regular">-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+<title>阅读作品</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="./../main.css" rel="stylesheet" />
+<script>
+function OpenInfobox() {
+    document.getElementById("infobox").style.display = "block";
+}
+function CloseInfobox() {
+    document.getElementById("infobox").style.display = "none";
+}
+</script>
+<meta charset="utf-8" />
+</head>
+
+<body>
+  <div class="navbar fixed">
+      <a href="/">&#8678</a>
+      <a onclick="OpenInfobox()">发布作品</a>
+  </div>
+  <div class="container">
+    <h3 class="wd-center">文章目录</h1>
+    <table>
+    <tr>
+        <th>作者信息</th>
+        <th>作品阅读</th>
+    </tr>
+    <tr>
+        <td>qqqqq, qqqqq </td>
+        <td>wwwww, wwwww</td>
+    </tr>
+    <tr>
+        <td>eeeee, eeeee</td>
+        <td>rrrrr, rrrrr</td>
+    </tr>
+    </table>
+    <p>希望浏览更多内容？点此链接<a href="https://baidu.com" target="_blank">下载落选文章合集</a>压缩包。</p>
+    <div id="infobox">
+      <h3 style="color:#333">作品提交须知</h3>
+      <b style="color:#333">提交:</b><p style="color:#333">加入QQ群【114514】提交你的文字作品。加群请表明来意。推荐提交格式：txt、docx。</p>
+      <b style="color:#333">结果评定:</b><p style="color:#333">本项目每个月会定期在参与活动的作品中，经公开投票，选举出最受欢迎的一篇，向其作者给予一定金额的奖金作为鼓励。</p>
+      <a class="right size3 underline" onclick="CloseInfobox()">我已知晓</a>
+    </div>
+  </div>
+</body>
+</html>

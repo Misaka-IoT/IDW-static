@@ -1,4 +1,5 @@
 /*     ///Color selector///     */
+/*
 :root {
     --color-tm-light: #f1f1f1;
     --color-tm-dark: #333;
@@ -24,6 +25,13 @@
         --color-bg: var(--color-bg-light);
         --color-word: var(--color-word-light);
     }
+}*/
+/* 还没搞好主题切换，先这样了。 */
+:root {
+    --color-nav: #333;
+    --color-bg: #2e3338;
+    --color-word: #eee;
+    --color-nav-content: #eee;
 }
 
 /*     ///Main style///      */
@@ -36,7 +44,7 @@ html {
 a {
     font-weight: 500;
 }
-p, b, i, h1, h2, h3, h4, h5, h6, center, th, td, ol, ul {
+p, b, i, center, th, td, ol, ul, h1, h2, h3, h4, h5, h6 {
     color: var(--color-word);
 }
 small {
@@ -79,6 +87,7 @@ table th {
 }
 img {
     width: 30%;
+    padding-bottom: 16px;
 }
 @media only screen and (max-width: 576px)  {
     img {
@@ -132,6 +141,7 @@ gold {
     overflow: hidden;
     background-color: var(--color-nav);
     box-shadow: 0px 3px 3px #4B4B4A;
+    opacity: 0.85;
 }
 .navbar a {
     float: left;
@@ -155,19 +165,27 @@ gold {
     color: var(--color-word);
     background-color: var(--color-nav);
 }
+#infocontainer {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 520; /* 设置在顶层 */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(60, 60, 60, .7); 
+}
 #infobox {
-    display: none;
-    border: #4B4B4A solid .8px;
-    border-radius: 10px;
-    position: fixed;
-    z-index: 1;
+    border: #4B4B4A solid .9px;
+    border-radius: 8px;
     width: 80%; 
     height: auto;
-    top: 80px;
-    left: center;
     overflow: auto; 
     background-color: #eee;
-    color: #333;
-    padding: 10px;
-    margin: 0 auto;
+    padding: 20px;
+    margin: 10% auto;
+}
+.black {
+    color: var(--color-nav);
 }
